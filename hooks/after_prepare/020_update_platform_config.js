@@ -76,25 +76,6 @@
  TODO: We may need to capture all default manifest/plist elements/keys created by Cordova along with any plugin elements/keys to compare against custom elements to remove.
  */
 
-//Fint App2App config, this updats the AndroidManifest before
-<platform name="android">
-<config-file target="AndroidManifest.xml" parent="/manifest/application">
-<activity 
-    android:name="com.flint.partenerLaunch.PartnerLaunch"
-    android:configChanges="keyboardHidden|orientation| 
-    screenSize"
-    android:excludeFromRecents="false"
-    android:label="@string/app_name"
-    android:screenOrientation="portrait"
-    android:windowSoftInputMode="stateHidden|adjustPan" >
-        <intent-filter>
-            *<action android:name="com.flint.invoke.doforms"/>*
-            <category android:name="android.intent.category.DEFAULT"/>
-        </intent-filter>
-</activity>
-</config-file>
-</platform>
-
 // global vars
 var fs = require('fs');
 var path = require('path');
